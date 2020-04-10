@@ -17,6 +17,18 @@ app.use(express.static(__dirname + "/public"));
 app.get("/", function(req, res){
   res.render("index");
 });
+
+app.get("/slantedDiv", function(req, res){
+  res.render("slantDiv", {
+  	layout:'layouts/slantedDivLayout'
+  });
+});
+
+app.get("/svg", function(req, res){
+  res.render("svgtut", {
+  	layout:'layouts/slantedDivLayout'
+  });
+});
 // app.get("/blog", function(req, res){
 //   res.render("blog");
 // });
